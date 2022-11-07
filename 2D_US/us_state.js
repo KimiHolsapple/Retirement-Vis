@@ -8,7 +8,11 @@ Malcolm Maclean, tooltips example tutorial
 http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
 
 Mike Bostock, Pie Chart Legend
-http://bl.ocks.org/mbostock/3888852  */
+http://bl.ocks.org/mbostock/3888852  
+
+Note: that the original link for where the code was modified for QoL used "years" which here actually holds the QoL index.
+
+*/
 
 
 //Width and height of map
@@ -139,7 +143,7 @@ svg.selectAll("path")
 });
 
 		 
-// Map the cities I have lived in!
+// Map the cities to their QoL
 d3.csv("cities-lived.csv", function(data) {
 
 	g_min_city = d3.min(data, function(d) {
